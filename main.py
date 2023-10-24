@@ -27,3 +27,6 @@ def main():
             print('')
         elif option == 3:
             break
+
+if __name__ == '__main__':
+    main()
