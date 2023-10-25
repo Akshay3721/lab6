@@ -3,6 +3,8 @@
 def encoder(number):
     number_list = [str(int(number[i]) + 3)[-1] for i in range(len(number))]
     return ''.join(number_list)
+
+
 def decoder(password):
     stringify = ""
     for number in str(password):
@@ -29,7 +31,9 @@ def decoder(password):
                 stringify += "6"
             case _:
                 pass
-    return int(stringify)
+    return stringify
+
+
 def main():
     while True:
         print('Menu')
@@ -50,6 +54,7 @@ def main():
             print('')
         elif option == 3:
             break
+
 
 if __name__ == '__main__':
     main()
